@@ -1,4 +1,4 @@
-package main //pintu masuk utama golang
+package main
 
 import (
 	"fmt"
