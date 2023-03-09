@@ -22,7 +22,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	ubah, ukuran := utf8.DecodeRuneInString(ruski)
+	ubah, _ := utf8.DecodeRuneInString(ruski)
 	var pecah float64 = 132.456000
 
 	fmt.Println(angka)
@@ -34,7 +34,7 @@ func main() {
 	fmt.Println("bilangan base 8 adalah :" + oktal)
 	fmt.Println("Nilai desimal dari ", base16, "adalah ", hexToDes)
 	fmt.Println("Nilai desimal dari ", base162, "adalah ", hexToDes2)
-	fmt.Println("Kode dari simbol : ", ruski, "adalah ", ubah, ukuran)
+	fmt.Println("Kode dari simbol : ", ruski, "adalah ", ubah)
 	fmt.Printf("%f\n", pecah)
 	fmt.Printf("%e", pecah)
 }
